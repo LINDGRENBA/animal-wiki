@@ -1,0 +1,60 @@
+
+#snake-info, #shark-info, #owl-info {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7d08a;
+}
+
+header {
+  padding-top: 20px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  height: auto;
+  padding: 10px;
+  background-color: #87b6a7;
+  border-radius: 50%;
+}
+
+img:hover {
+  cursor: pointer;
+  border: .5px solid #e3f09b;
+}
+
+.info {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #f79f79;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+
+
+/* COLOR SCHEME
+$color1: #f79f79ff; Light salmon
+$color2: #f7d08aff; Deep champagne
+$color3: #e3f09bff; Key lime
+$color4: #87b6a7ff; Green sheen
+$color5: #5b5941ff; Ebony
+
+$color1: rgba(247, 159, 121, 1);
+$color2: rgba(247, 208, 138, 1);
+$color3: rgba(227, 240, 155, 1);
+$color4: rgba(135, 182, 167, 1);
+$color5: rgba(91, 89, 65, 1);
+*/
