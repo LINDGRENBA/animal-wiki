@@ -4,8 +4,22 @@ $(document).ready(function() {
 
     let userChoice = $("#animal-type").val();
     let animal = userChoice.toLowerCase();
-    alert(animal);
 
+      if(animal === "snake") {
+        $("#snake-info").show();
+        $("#shark-info").hide();
+        $("#owl-info").hide();
+      } else if(animal === "owl") {
+        $("#owl-info").show();
+        $("#shark-info").hide();
+        $("#snake-info").hide();
+      } else {
+        $("#shark-info").show();
+        $("#snake-info").hide();
+        $("#owl-info").hide();
+      }
 
   });
 });
+
+//#snake-info, #shark-info, #owl-info
