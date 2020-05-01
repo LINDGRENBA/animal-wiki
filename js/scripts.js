@@ -1,23 +1,20 @@
 $(document).ready(function() {
-  $("#animal").submit(function(event) {
-    event.preventDefault();
 
-    let userChoice = $("#animal-type").val();
-    let animal = userChoice.toLowerCase();
+  $("img").click(function(){
+    let animal = $(this).attr("id");
 
-      if(animal === "snake") {
-        $("#snake-info").show();
-        $("#shark-info").hide();
-        $("#owl-info").hide();
-      } else if(animal === "owl") {
-        $("#owl-info").show();
-        $("#shark-info").hide();
-        $("#snake-info").hide();
-      } else {
-        $("#shark-info").show();
-        $("#snake-info").hide();
-        $("#owl-info").hide();
-      }
-
+    if(animal === "snake-image") {
+      $("#snake-info").show();
+      $("#shark-info").hide();
+      $("#owl-info").hide();
+    } else if (animal === "owl-image") {
+      $("#owl-info").show();
+      $("#shark-info").hide();
+      $("#snake-info").hide();
+    }  else {
+      $("#shark-info").show();
+      $("#snake-info").hide();
+      $("#owl-info").hide();
+    }
   });
 });
