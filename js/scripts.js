@@ -21,5 +21,3 @@ $(document).ready(function() {
 
   });
 });
-
-//#snake-info, #shark-info, #owl-info
